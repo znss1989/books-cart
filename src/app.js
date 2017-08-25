@@ -1,13 +1,13 @@
 'use strict'
 import {createStore, applyMiddleware} from 'redux'
 import logger from 'redux-logger'
-// import actions from './actions/actions'
+import actions from './actions/actions'
 import rootReducer from './reducers/rootReducer'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
 
-import BooksList from './components/pages/booksList'
+import BooksList from './components/pages/BooksList'
 
 // store
 const middleWare = applyMiddleware(logger);
